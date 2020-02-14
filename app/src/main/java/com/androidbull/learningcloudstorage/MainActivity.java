@@ -104,7 +104,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void downloadPhoto(View view) {
-        StorageReference imageReference = FirebaseStorage.getInstance().getReference().child("images/1.png");
+        StorageReference imageReference = FirebaseStorage.getInstance().getReference().child("images/test_image.png");
 
         imageReference.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
             @Override
